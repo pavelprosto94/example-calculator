@@ -9,7 +9,7 @@ Rectangle {
     color: "#AEA79F"
     radius: units.gu(1)
     border.width: units.gu(0.25)
-    border.color: "white"
+    border.color: backgroundColor
 
     property alias color_text: label.color
     Label {
