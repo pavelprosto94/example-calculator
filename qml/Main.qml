@@ -52,13 +52,13 @@ MainView {
             columns: 4
             rows: 4
             Repeater {
-                model: ["/", 1, 2, 3, "*", 4, 5, 6, "-", 7, 8, 9, "+", ",", 0]
+                model: ["/", 1, 2, 3, "*", 4, 5, 6, "-", 7, 8, 9, "+", ".", 0]
                 delegate: CalculatorButton {
                     text: modelData.toString ()
                     height: parent.height / parent.rows
                     width: parent.width / parent.columns
                     color: {
-                    if ((index % 4 == 0) || (modelData.toString() == ","))
+                    if ((index % 4 == 0) || (modelData.toString() == "."))
                         {
                             color_text = "white"
                             return "#E95420"
